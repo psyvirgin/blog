@@ -7,12 +7,12 @@ title: Jacob's Blogger | 部落格
 subtitle: 一个Linux爱好者的个人学习博客
 description: 
 author: Jacob Chow
-language: zh-CN
+language: zh-Hans
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://tfwall.tk
+url: tfwall.tk 
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -72,13 +72,13 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: nlvi 
+theme: next 
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: root@111.38.109.124:/usr/GitLibrary/hexo
+  repo: root@35.201.156.148:/usr/GitLibrary/hexo
   branch: master
 
 
@@ -89,3 +89,14 @@ admin:
     secret: hey hexo
     expire: 60*1
     # cors: http://localhost:3000
+
+##自动生成sitemap
+sitemap:
+    path: sitemap.xml
+baidusitemap:
+    path: baidusitemap.xml 
+
+
+search:
+    path: search.xml 
+    field: post
