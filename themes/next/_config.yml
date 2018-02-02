@@ -94,10 +94,10 @@ index_with_subtitle: false
 menu:
   home: / || home
   about: /about/ || user
-  tags: /tags/ || tags
-  categories: /categories/ || th
+  #tags: /tags/ || tags
+  #categories: /categories/ || th
   archives: /archives/ || archive
-  schedule: /schedule/ || calendar
+  #schedule: /schedule/ || calendar
   sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
 
@@ -126,11 +126,11 @@ scheme: Muse
 # Key is the link label showing to end users.
 # Value before `||` delimeter is the target permalink.
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
-#social:
-  #GitHub: https://github.com/yourname || github
-  #E-Mail: mailto:yourname@gmail.com || envelope
+social:
+  GitHub: https://github.com/psyvirgin || github
+  E-Mail: mailto:psyvirgin0@gmail.com || envelope
   #Google: https://plus.google.com/yourname || google
-  #Twitter: https://twitter.com/yourname || twitter
+  Twitter: https://twitter.com/Jacob_jhs || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
   #VK Group: https://vk.com/yourname || vk
   #StackOverflow: https://stackoverflow.com/yourname || stack-overflow
@@ -140,9 +140,10 @@ scheme: Muse
 
 social_icons:
   enable: true
-  icons_only: false
+  icons_only: true
   transition: false
-
+  GitHub: github 
+  Twitter: twitter
 # Blog rolls
 links_icon: link
 links_title: Links
@@ -154,7 +155,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: /images/avatar.png
+#avatar: /images/avatar.gif
 
 # Table Of Contents in the Sidebar
 toc:
@@ -242,9 +243,9 @@ post_wordcount:
   #description: ex. subscribe to my blog by scanning my public wechat account
 
 # Reward
-#reward_comment: Donate comment here
-#wechatpay: /images/wechatpay.jpg
-#alipay: /images/alipay.jpg
+reward_comment: Donate comment here
+wechatpay: /images/wechatpay.jpg
+alipay: /images/alipay.jpg
 #bitcoin: /images/bitcoin.png
 
 # Declare license on posts
@@ -277,7 +278,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties # night night blue night bright night eighties normal
 
 
 # ---------------------------------------------------------------
@@ -360,8 +361,8 @@ han: false
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true 
+  shortname: Jacob
   count: true
 
 # Hypercomments
@@ -384,7 +385,7 @@ valine:
   notify: false # mail notifier , https://github.com/xCss/Valine/wiki
   verify: false # Verification code
   placeholder: Just go go # comment box placeholder
-  avatar:  mm # gravatar style
+  avatar: mm # gravatar style
   guest_info: nick,mail,link # custom comment header
   pageSize: 10 # pagination size
 
@@ -418,7 +419,7 @@ gitment:
 # Available value:
 #    button | slide
 # Warning: Baidu Share does not support https.
-#baidushare:
+baidushare: true 
 ##  type: button
 
 # Share
@@ -462,10 +463,10 @@ needmoreshare2:
 
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-#google_site_verification:
+google_site_verification: TyDARN3KDOSNfwiQc-7eK_BU3rpqWu88YUO-bdqo1rE
 
 # Google Analytics
-#google_analytics:
+google_analytics: UA-113454501-1
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
@@ -604,7 +605,7 @@ algolia_search:
 # Local search
 # Dependencies: https://github.com/flashlab/hexo-generator-search
 local_search:
-  enable: false
+  enable: true
   # if auto, trigger search by changing input
   # if manual, trigger search by pressing enter key or search button
   trigger: auto
